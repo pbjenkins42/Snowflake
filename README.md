@@ -1,0 +1,1 @@
+In this repository I have multiple data projects I did primarily in Snowflake with some AWS, DBT Cloud and Visual Studio as well. Projects include simiple data analysis to data engineering where I built full pipelines from AWS to Snowflake to DBT Cloud to Tableau.
