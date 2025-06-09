@@ -5,7 +5,9 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 USE ROLE accountadmin;\
+\f0\fs24 \cf0 
+    
+USE ROLE accountadmin;\
 \
 USE WAREHOUSE compute_wh;\
 \
@@ -300,7 +302,6 @@ Engineering	2018	211200.00\
 Sales	2018	39600.00\
 """\
 -- Calculate the total salary expense per department for each year. (2018-2024 yearend)\
--- I read this question different than DEA did. Their answer is below but based on how the question was asked I think my answer is more accurate, they only count salaries from NEW HIRES. The way the question should be asked is what is the Salary Expense per Department per Year for new hires. But even this doesn't properly answer the quesiton as we know the hire date of each employee, they didn't work the entire year and this needs thier annual salary should be prorated by how many days they worked in that year. My answer has prorated salaries for each employees first year based off of the hire date and I assumed nobody was fired so I added their salaries for every year after thier first year into the total Salary Expense\
 WITH cte AS(\
     SELECT\
         employee_id,\
